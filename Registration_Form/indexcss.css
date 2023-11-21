@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+
+.round-button {
+    border-radius: 80%;  
+    padding: 10px 20px;  
+    background-color: #00000000;  
+    color: rgb(21, 117, 98);  
+    border: none;  
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+
+
+
+.table-of-contents {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Adjust the alpha channel for transparency */
+    color: rgb(245, 237, 8); /* Text color for links */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure the table of contents appears above other content */
+  }
+  
+  .table-of-contents ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .table-of-contents li {
+    margin-right: 20px;
+  }
+  
+  .table-of-contents a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+  }
+  
+  .content-section {
+    margin-top: 60px; /* Adjust to match the height of the table of contents */
+    padding: 20px;
+    background-color: #f4f4f400; /* Add a background color to your content sections */
+    border-bottom: 1px solid #dddddd00; /* Optional: Add a border between sections */
+  }
